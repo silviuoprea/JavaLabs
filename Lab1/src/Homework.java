@@ -76,7 +76,7 @@ public class Homework {
     }
     public static void main(String[] args)
     {
-        Ex1(new String[]{"100", "7", "A", "C", "G", "T"});
+        Ex1(args);
     }
     /* To run in command prompt compile with javac then run as specified in Hw text */
 }
