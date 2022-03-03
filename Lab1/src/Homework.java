@@ -33,13 +33,13 @@ public class Homework {
                 System.out.println("Argumentul " + args[i] + " este litera mare!");
             }
         }
-        for (int i = 1; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             wordArray.add(generateWord(arglength, p, args));
         }
         System.out.println(wordArray);
         long end = nanoTime();
-        if (n > 99)
+        if (n > 30_000)
             System.out.println(end - init);
     }
     public static String generateWord(int arglength, int p, String[] args)
