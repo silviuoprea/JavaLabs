@@ -3,12 +3,10 @@ public class Room {
     RoomType type;
     int capacity;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Room(String name, int capacity, RoomType type) {
         this.name = name;
+        this.type = type;
+        this.capacity = capacity;
     }
 
     public RoomType getType() {
@@ -31,8 +29,8 @@ public class Room {
     public String toString() {
         return "Room{" +
                 "name='" + name + '\'' +
-                ", type=" + type +
                 ", capacity=" + capacity +
+                ", type=" + type +
                 '}';
     }
 }

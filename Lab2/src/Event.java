@@ -1,11 +1,20 @@
 public class Event {
 
+    String name;
     int participants;
     int starttime;
     int endtime;
 
     public int getParticipants() {
         return participants;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setParticipants(int participants) {
@@ -28,10 +37,18 @@ public class Event {
         this.endtime = endtime;
     }
 
+    public Event(String name, int participants, int starttime, int endtime) {
+        this.name = name;
+        this.participants = participants;
+        this.starttime = starttime;
+        this.endtime = endtime;
+    }
+
     @Override
     public String toString() {
         return "Event{" +
-                "participants=" + participants +
+                "name='" + name + '\'' +
+                ", participants=" + participants +
                 ", starttime=" + starttime +
                 ", endtime=" + endtime +
                 '}';
