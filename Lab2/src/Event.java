@@ -45,6 +45,11 @@ public class Event {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
     public String toString() {
         return "Event{" +
                 "name='" + name + '\'' +

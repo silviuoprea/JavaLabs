@@ -26,6 +26,11 @@ public class Room {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
     public String toString() {
         return "Room{" +
                 "name='" + name + '\'' +

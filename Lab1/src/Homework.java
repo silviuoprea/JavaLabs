@@ -42,6 +42,15 @@ public class Homework {
         if (n > 30_000)
             System.out.println(end - init);
     }
+    /**
+     * Generate words based on parameters given
+     * @param arglength, p, args
+     *    parameters are length of the argument(number of letters from argument)
+     *    length of desired generated word
+     *    arguments given for the problem
+     * @return
+     *    returns a desired randomly generated word
+     */
     public static String generateWord(int arglength, int p, String[] args)
     {
         StringBuilder word = new StringBuilder();
