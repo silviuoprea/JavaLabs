@@ -13,6 +13,11 @@ public class GameMechanics {
         init();
     }
 
+    /**
+     * Method responsible for generating randomly the sticks
+     * that would be valid for the game
+     */
+
     public void init() {
         Node[] nodes = new Node[frame.canvas.rows * frame.canvas.cols];
 

@@ -12,6 +12,7 @@ public class DrawingPanel extends JPanel {
     int cellWidth, cellHeight;
     int padX, padY;
     int stoneSize = 20;
+    int player = 1;
 
     BufferedImage image; //the offscreen image
     Graphics2D offscreen; //the offscreen graphics
@@ -30,6 +31,11 @@ public class DrawingPanel extends JPanel {
         offscreen.fillRect(0, 0, canvasWidth, canvasHeight);
     }
 
+    /**
+     * This is the init method
+     * generates the canvas for the game
+     * calls the action that is executed on mouse press
+     */
     final void init(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
@@ -51,8 +57,13 @@ public class DrawingPanel extends JPanel {
         });
     }
 
-    int player = 1;
-
+    /**
+     * Method responsible for coloring stones, determining the winner
+     * @param x coordinate of mouse click
+     * @param y coordinate of mouse click
+     *
+     * X and Y - ideal stone coordinates (intersection)
+     */
     private void drawStone(int x, int y) {
         if (player == 1)
             offscreen.setColor(Color.BLUE);
@@ -99,6 +110,10 @@ public class DrawingPanel extends JPanel {
         graphics.drawImage(image, 0, 0, this);
     }
 
+    /**
+     * Method responsible for coloring the game grid
+     */
+
     private void paintGrid() {
         offscreen.setColor(Color.DARK_GRAY);
 
@@ -132,6 +147,13 @@ public class DrawingPanel extends JPanel {
     @Override
     public void update(Graphics g) {
     } //No need for update
+
+    /**
+     * Method responsible for painting the sticks
+     * that would be valid for the game
+     * @param node1 node that is used as coordinate for a stick
+     * @param node2 node that is used as coordinate for a stick
+     */
 
     public void paintSticks(Node node1, Node node2) {
         offscreen.setStroke(new BasicStroke(4));

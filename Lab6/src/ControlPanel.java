@@ -25,10 +25,13 @@ public class ControlPanel extends JPanel {
         saveBtn.addActionListener(this::saveGame);
     }
 
+    /**
+     * Method responsible for saving the state of a game via png
+     * @param actionEvent generic action event parameter
+     */
     private void saveGame(ActionEvent actionEvent) {
         RenderedImage renderedImage = frame.canvas.image;
-
-        File file = new File("C:\\Users\\blkma\\Desktop\\MyGame.png");
+        File file = new File("MyGame.png");
 
         try {
             ImageIO.write(renderedImage, "png", file);
