@@ -29,3 +29,7 @@ Homework (2p)
 Output of the homework assignment, state saved as PNG: 
 
 ![output image](MyGame.png)
+
+How to use:
+
+Run/Double-click on Lab6.jar
