@@ -43,5 +43,5 @@ Bonus (2p+)
 
 Output of the homework assignment, state saved as PNG: 
 
-![output image](output.png)
+![output image](output.PNG)
 
