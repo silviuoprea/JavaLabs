@@ -1,11 +1,4 @@
-public class Tile {
-    private final char letter;
-    private final int points;
-
-    public Tile(char letter, int points) {
-        this.letter = letter;
-        this.points = points;
-    }
+public record Tile(char letter, int points) {
 
     public char getLetter() {
         return letter;
@@ -17,6 +10,6 @@ public class Tile {
 
     @Override
     public String toString() {
-        return Character.toUpperCase(letter) + "=" + points + "p";
+        return letter + "=" + points + "p";
     }
 }
