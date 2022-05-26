@@ -17,10 +17,10 @@ Compulsory (1p)
 - [x] Test your services using the browser and/or Postman.
 
 Homework (2p)
-- [] Create REST services for inserting and reading relationships.
-- [] Create a service for determining the first k most popular persons in the network.
-- [] Create a simple client application that invokes the services above, using the support offered by Spring Boot.
-- [] Document your services using Swagger or a similar tool.
+- [x] Create REST services for inserting and reading relationships.
+- [x] Create a service for determining the first k most popular persons in the network.
+- [x] Create a simple client application that invokes the services above, using the support offered by Spring Boot.
+- [x] Document your services using Swagger or a similar tool.
 - [] (+1p) Secure your services using the HTTPS protocol and JSON Web Tokens
 
 
